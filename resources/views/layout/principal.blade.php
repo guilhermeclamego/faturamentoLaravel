@@ -40,7 +40,9 @@
                 <a href="/home">Usuário: {{ Auth::user()->name }} - Email: {{ Auth::user()->email }}</a>
             </li>     
             <li class="active">
-                <a href="{{action('LogoutController@logout')}}">Logout</a>
+                <button type="submit" class="btn btn-info">
+                    <a href="{{action('auth\LogoutController@logout')}}">Logout</a>
+                </button>    
             </li>                     	
         </ul>
 

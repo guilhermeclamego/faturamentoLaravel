@@ -1,8 +1,7 @@
 @extends('layout.principal')
 @section('conteudo')
 
-@section('content')
+<h1>Sistema de Faturamento - Laravel</h1>
 
 
-@endsection
 @stop
