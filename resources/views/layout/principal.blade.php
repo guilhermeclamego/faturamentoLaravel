@@ -16,24 +16,40 @@
                 <a href="/home">Faturamento</a>
             </li>
             <li class="active">
-                <a href="/produtos">Produto</a>
+                <button type="submit" class="btn btn-info">
+                    <a href="/produtos">Produto</a>
+                </button>    
             </li>
             <li class="active">
-                <a href="/pessoas">Pessoa</a>
+                <button type="submit" class="btn btn-info">
+                    <a href="/pessoas">Pessoa</a>
+                </button>    
             </li>
             <li class="active">
-                <a href="/condpags">Condição de Pagamento</a>
-            </li>
+                <button type="submit" class="btn btn-info">
+                    <a href="/condpags">Condição de Pagamento</a>
+                </button>    
+            </li>            
             <li class="active">
-                <a href="/pedidos">Pedido</a>
+                <button type="submit" class="btn btn-info">
+                    <a href="/pedidos">Pedido</a>
+                </button>
             </li>
+           
+            <li class="active">
+                <a href="/home">Usuário: {{ Auth::user()->name }} - Email: {{ Auth::user()->email }}</a>
+            </li>     
+            <li class="active">
+                <a href="{{ route('logout') }}">Logout</a>
+            </li>                     	
         </ul>
-        
+
+
     </nav>      
         @yield('conteudo');
 
         <footer class="footer">
-            <p>Guilherme Cesar Lamego</p>
+            <p>Guilherme Cesar Lamego - Versão 1.0</p>
         </footer>
     </div>
 </body>
