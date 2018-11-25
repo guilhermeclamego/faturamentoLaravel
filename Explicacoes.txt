@@ -23,6 +23,6 @@ view principal
 
 
 GitBash:
-Commitar as alterações: git commit -m "mensagem, apenas para controle"
-depois
-git push -u origin master
+1 - Commitar as alterações: git commit -m "mensagem, apenas para controle"
+2 - Caso precisar adicionar algum arquivo: git add arquivo.xxx
+3 - git push origin master

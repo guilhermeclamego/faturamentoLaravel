@@ -33,6 +33,16 @@ Route::get('/condpags/remove/{id}', 'CondpagController@remove');
 Route::get('/condpags/busca/{id}', 'CondpagController@busca')->where('id', '[0-9]+');;
 Route::post('/condpags/altera', 'CondpagController@altera');
                         
+//Rotas do Pedido
+Route::get('/pedidos', "PedidoController@lista")->middleware('auth');
+Route::get('/pedidos', 'PedidoController@lista');
+Route::get('/pedidos/mostra/{id}', 'PedidoController@mostra')->where('id', '[0-9]+');
+Route::get('/pedidos/novo', 'PedidoController@novo');
+Route::post('/pedidos/adiciona', 'PedidoController@adiciona');
+Route::get('/pedidos/remove/{id}', 'PedidoController@remove');
+Route::get('/pedidos/busca/{id}', 'PedidoController@busca')->where('id', '[0-9]+');;
+Route::post('/pedidos/altera', 'PedidoController@altera');
+
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

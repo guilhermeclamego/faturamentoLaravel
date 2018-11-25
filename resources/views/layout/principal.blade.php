@@ -24,6 +24,9 @@
             <li class="active">
                 <a href="/condpags">Condição de Pagamento</a>
             </li>
+            <li class="active">
+                <a href="/pedidos">Pedido</a>
+            </li>
         </ul>
         
     </nav>      
