@@ -43,5 +43,5 @@ Route::post('/pedidos/altera', 'PedidoController@altera')->middleware('auth');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/login', 'LoginController@login');
-Route::get('auth/logout', 'LogoutController@logout');
+Route::get('auth/login', 'auth\LoginController@login');
+Route::get('auth/logout', 'auth\LogoutController@logout');

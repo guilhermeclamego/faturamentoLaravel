@@ -45,11 +45,11 @@
 						</li>
 					@endif
 				</ul>
-				<ul class="nav navbar-nav navbar-left">
+				<!--<ul class="nav navbar-nav navbar-left">
 						<li>
 							<a href="/produtos">Ir ao sistema</a>
 						</li>
-				</ul>
+				</ul>-->
 			</div>			
 		</div>
 	</nav>
