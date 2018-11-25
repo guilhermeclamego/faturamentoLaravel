@@ -1,0 +1,27 @@
+﻿php artisan make:model Produto   -> Criar o model
+
+php artisan make:migration create_nomedatabela_table  -> Criar a classe do migrations
+(Produtos será a tabela, fica produtos)
+
+php artisan migrate -> Criar a tabela do comando anterior
+
+php artisan migrate:rollback -> ultima migração será desfeita
+
+php artisan make:request XXnomeXX (ProdutoRequest)   -> Criação da classe request
+
+Exemplo de listagem, caso a variável estoque estiver vazia irá trazer a mensagem.
+<b>Estoque: </b> {{ $p->estoque or 'Produto sem estoque'}} 
+
+
+Passos de cada tabela:
+database
+view
+controller
+request
+view principal
+
+
+
+
+
+parei na pag: 150
