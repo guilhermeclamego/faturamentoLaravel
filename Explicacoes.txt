@@ -22,6 +22,7 @@ view principal
 
 
 
-
-
-parei na pag: 150
+GitBash:
+Commitar as alterações: git commit -m "mensagem, apenas para controle"
+depois
+git push -u origin master
